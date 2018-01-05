@@ -14,7 +14,7 @@ def maxRGB(image):
     return cv2.merge([B,G,R])
 
 
-image = cv2.imread("images/dog.jpeg")
+image = cv2.imread("dog.jpeg")
 imgMax = maxRGB(image)
 cv2.imshow("Max RGB Filter", np.hstack([image,imgMax]))
 cv2.waitKey(0)
